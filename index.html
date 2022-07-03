@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <title>Momentum App</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="container-item">
+        <div id="weather" class="shadow-small">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <div id="todo">
+        <div class="todo-btn">
+          <span class="material-icons md-48 shadow-small">checklist</span>
+        </div>
+        <div>
+          <ul id="todo-list"></ul>
+          <form id="todo-form">
+            <input
+              type="text"
+              placeholder="Write a To do"
+              required
+              tabindex="-1"
+            />
+          </form>
+        </div>
+      </div>
+      <div id="center-container" class="cotainer-item shadow-big">
+        <h2 id="clock">00:00:00</h2>
+        <form id="login-form" class="hidden">
+          <input
+            required
+            maxlength="15"
+            type="text"
+            placeholder="What is your name?"
+          />
+          <!-- <input type="submit" value="Log In" /> -->
+        </form>
+        <div id="greeting-box">
+          <h1 id="greeting" class="hidden"></h1>
+          <div class="greeting-btn hidden">
+            <span class="material-icons"> more_horiz </span>
+            <div class="greeting-menu no-shadow hidden">
+              <ul>
+                <li id="logout">Log Out</li>
+              </ul>
+            </div>
+          </div>
+          <div id="greeting-menu-container" class="hidden"></div>
+        </div>
+      </div>
+      <div id="bottom-line" class="container-item shadow-small">
+        <div id="bgimage-author">
+          <span></span>
+        </div>
+        <div id="quote">
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+    <script src="js/greetings.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
+  </body>
+</html>
